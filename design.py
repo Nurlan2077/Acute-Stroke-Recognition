@@ -2,11 +2,13 @@
 
 # Form implementation generated from reading ui file 'design.ui'
 #
-# Created by: PyQt5 UI code generator 5.11.3
+# Created by: PyQt5 UI code generator 5.13.0
 #
 # WARNING! All changes made in this file will be lost!
 
+
 from PyQt5 import QtCore, QtGui, QtWidgets
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -18,7 +20,7 @@ class Ui_MainWindow(object):
         self.findStrokeButton.setGeometry(QtCore.QRect(40, 620, 281, 23))
         self.findStrokeButton.setObjectName("findStrokeButton")
         self.loadButton = QtWidgets.QPushButton(self.centralwidget)
-        self.loadButton.setGeometry(QtCore.QRect(40, 50, 151, 23))
+        self.loadButton.setGeometry(QtCore.QRect(40, 40, 161, 23))
         self.loadButton.setObjectName("loadButton")
         self.downloadButton = QtWidgets.QPushButton(self.centralwidget)
         self.downloadButton.setGeometry(QtCore.QRect(610, 620, 251, 23))
@@ -30,9 +32,12 @@ class Ui_MainWindow(object):
         self.outputImage.setGeometry(QtCore.QRect(610, 100, 512, 512))
         self.outputImage.setObjectName("outputImage")
         self.fileName = QtWidgets.QLabel(self.centralwidget)
-        self.fileName.setGeometry(QtCore.QRect(210, 50, 871, 21))
+        self.fileName.setGeometry(QtCore.QRect(220, 40, 871, 21))
         self.fileName.setText("")
         self.fileName.setObjectName("fileName")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(40, 70, 231, 16))
+        self.label.setObjectName("label")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1203, 21))
@@ -53,4 +58,4 @@ class Ui_MainWindow(object):
         self.downloadButton.setText(_translate("MainWindow", "Скачать обработанный снимок"))
         self.inputImage.setText(_translate("MainWindow", "Input"))
         self.outputImage.setText(_translate("MainWindow", "Output"))
-
+        self.label.setText(_translate("MainWindow", "Количество найденных очагов: "))
